@@ -1,0 +1,254 @@
+.cc-navbar{
+    background-color: rgba(0, 0, 0, 0.55);
+    box-shadow: 1px 1px 3px rgba(255, 255, 255, 0.54);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.btn-oder{
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    transition: 0.5s;
+}
+
+.btn-oder:hover{
+    color: white;
+    background-color: var(--bs-teal);
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    border-bottom: 1px solid var(--bs-teal);
+}
+
+.banner{
+    background: url('../image/restaurant.jpg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+}
+
+.explorer{
+    text-align: center;
+}
+
+.explorer button{
+    color: var(--bs-teal);
+    border-color: var(--bs-teal);
+    background-color: transparent;
+    margin-top: 30px;
+}
+
+.explorer button:hover{
+    color: white;
+    background-color: var(--bs-teal);
+}
+
+.else{
+    color: white;
+    text-align: center;
+    padding-top: 300px;
+}
+
+.bamme img{
+    width: 100%;
+   max-width: 750PX;
+    height: auto;
+    object-fit: cover;
+}
+
+.bamme p{
+    margin-left: 0;
+    position: static;
+    margin-top: 20px;
+}
+
+.bammer img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+}
+
+.carousel-item img{
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    object-fit: cover;
+}
+
+.base img{
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    object-fit: cover;
+}
+
+.section{
+    background: url('../image/image\ restaurant.jpeg');
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.div{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.bammen{
+    min-height: 800px;
+    margin-top: 150px;
+    background: black;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+
+.idr img{
+    width: 100%;
+    max-width: 950px;
+    height: auto;
+    display: block;
+    margin: auto;
+    object-fit: cover;
+}
+
+.oner-one{
+    position: relative;
+    margin-top: 100px;
+    background: url('../image/restaurant.jpg');
+    min-height: 550px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.rom{
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    height: auto;
+}
+
+.card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.card img{
+    width: 95%;
+    height: 400px;
+    object-fit: cover;
+}
+
+h3{
+    color:white;
+}
+
+.card-body{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+@media screen and (max-width: 992px){
+
+    .else{
+        padding-top: 220px;
+    }
+
+    .card img{
+        height: 300px;
+    }
+
+    .oner-one{
+        min-height: 400px;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .banner{
+        background-attachment: scroll;
+    }
+
+    .else{
+        padding-top: 180px;
+    }
+
+    .bammen{
+        min-height: auto;
+        margin-top: 80px;
+    }
+
+    .oner-one{
+        min-height: 300px;
+    }
+
+    .card img{
+        height: 250px;
+    }
+
+    h1{
+        font-size: 2rem;
+    }
+
+    h2{
+        font-size: 1.7rem;
+    }
+
+    h3{
+        font-size: 1.4rem;
+    }
+
+    p{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    .else{
+        padding-top: 150px;
+    }
+
+    .card img{
+        height: 200px;
+    }
+
+    h1{
+        font-size: 1.7rem;
+    }
+
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.2rem;
+    }
+
+    p{
+        font-size: 0.95rem;
+    }
+
+    .btn-oder,
+    .explorer button{
+        width: 100%;
+    }
+}
