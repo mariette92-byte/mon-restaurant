@@ -11,6 +11,7 @@
  </head>
  <body>
   <header>
+   <button id="theme-btn" class="btn btn-outline-light btn-theme ms-3"> 🌙 Thème </button>
    <nav class="cc-navbar navbar navbar-expand-lg navbar-dark">
     <div class="container-fluid">
     <a class="navbar-brand d-flex align-items-center mx-4 py-3" href="#">
@@ -32,9 +33,11 @@
        <li class="nav-item pe-4">
         <a class="nav-link" href="#">Les classiques</a>
        </li>
-       <li class="nav-item pe-4">
-       <a class="btn btn-outline-light btn-oder rounded-0" href="#"> Passez la commande </a>
-       </li>
+      <li class="nav-item pe-3">
+    <a class="btn btn-outline-light btn-oder rounded-0" href="#">
+        Passez la commande
+    </a>
+</li>
       </ul>
      </div>
     </div>
@@ -182,28 +185,76 @@
     </div>
     <div class="card text-center text-light bg-transparent">
      <div class="card-header fs-4">
-      <ul class="nav nav-pills card-header-pills justify-content-center">
-       <li class="nav-item text-center">
-        <a class="nav-link active px-5 mx-5 bg-transparent text-light" href="#">
-         Tous Les Menus
-        </a>
-       </li>
-       <li class="nav-item text-center">
-        <a class="nav-link text-light text-light" href="#">
-         Petit Déjeuné
-        </a>
-       </li>
-       <li class="nav-item">
-        <a aria-disabled="true" class="nav-link text-light text-light">
-         Saveurs Africaines
-        </a>
-       </li>
-       <li class="nav-item">
-        <a aria-disabled="true" class="nav-link text-light text-light">
-         L'occident
-        </a>
-       </li>
-      </ul>
+     <ul class="nav nav-tabs justify-content-center border-0" id="menuTab" role="tablist">
+
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link active bg-transparent text-white"
+            id="tous-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#tous"
+            type="button"
+            role="tab">
+            Tous les menus
+        </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link bg-transparent text-white"
+            id="petit-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#petit"
+            type="button"
+            role="tab">
+            Petit déjeuner
+        </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link bg-transparent text-white"
+            id="afrique-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#afrique"
+            type="button"
+            role="tab">
+            Saveurs africaines
+        </button>
+    </li>
+
+    <li class="nav-item" role="presentation">
+        <button
+            class="nav-link bg-transparent text-white"
+            id="occident-tab"
+            data-bs-toggle="tab"
+            data-bs-target="#occident"
+            type="button"
+            role="tab">
+            L'occident
+        </button>
+    </li>
+
+</ul>
+<div class="tab-content mt-4">
+
+    <div class="tab-pane fade show active" id="tous">
+        <!-- Tes cartes actuelles -->
+    </div>
+
+    <div class="tab-pane fade" id="petit">
+        <!-- Cartes du petit déjeuner -->
+    </div>
+
+    <div class="tab-pane fade" id="afrique">
+        <!-- Cartes africaines -->
+    </div>
+
+    <div class="tab-pane fade" id="occident">
+        <!-- Cartes occidentales -->
+    </div>
+
+</div>
      </div>
      <div class="card-body">
       <h5 class="card-title">
@@ -262,7 +313,7 @@
       </div>
      </div>
     </main>
-    <section class="bammen mb-1">
+    <section class="bammen mb-0">
      <div class="card-body text-center py-5 ">
       <h5 class="card-title">
        LES DELICES INTERDITS
@@ -312,7 +363,7 @@
     </section>
    </section>
    <form class="order-one ">
-    <main class="oner-one mt-1">
+    <main class="oner-one mt-0">
      <div class="container text-center">
       <div class="row align-items-start py-5">
        <h3 class="text-white mb-4"> Passez la commande </h3>
@@ -429,5 +480,6 @@
    </footer>
   <h4 class="copyright">@ le gout du pané 2021 copyright </h4>
   </section>
+   <script src="assets/js/rest.js"></script>
  </body>
 </html>
