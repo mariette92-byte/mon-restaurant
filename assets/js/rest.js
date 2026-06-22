@@ -25,20 +25,16 @@ document.addEventListener("DOMContentLoaded", function () {
     btnContainer.className = "text-center mt-4";
 
     btnContainer.innerHTML = `
-        <button type="button" id="btnCommande" class="btn btn-success me-2">
-            Envoyer la commande
-        </button>
+      
 
         <button type="button" id="btnWhatsapp" class="btn btn-primary">
-            WhatsApp
+            Envoyer la commande
+            
         </button>
     `;
 
     form.appendChild(btnContainer);
 
-    document.getElementById("btnCommande").addEventListener("click", function () {
-        alert("Votre commande a été enregistrée !");
-    });
 
     document.getElementById("btnWhatsapp").addEventListener("click", function () {
 
