@@ -81,3 +81,36 @@ ${commentaire}
     });
 
 });
+const langBtn = document.getElementById("lang-btn");
+
+let currentLang = "fr";
+
+langBtn.addEventListener("click", () => {
+
+    if(currentLang === "fr"){
+
+        document.querySelector(".nav-link.active").textContent = "Home";
+
+        document.querySelectorAll(".nav-link")[1].textContent = "Discover";
+        document.querySelectorAll(".nav-link")[2].textContent = "Classics";
+
+        document.querySelector(".btn-oder").textContent = "Order Now";
+
+        langBtn.textContent = "FR";
+
+        currentLang = "en";
+
+    }else{
+
+        document.querySelector(".nav-link.active").textContent = "Accueil";
+
+        document.querySelectorAll(".nav-link")[1].textContent = "Découvrir";
+        document.querySelectorAll(".nav-link")[2].textContent = "Les classiques";
+
+        document.querySelector(".btn-oder").textContent = "Passez la commande";
+
+        langBtn.textContent = "EN";
+
+        currentLang = "fr";
+    }
+});
