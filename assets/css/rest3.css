@@ -358,23 +358,35 @@ p{
     .explorer button{
         width: 100%;
     }
+    @media(max-width:992px){
+
+    .navbar-nav{
+        text-align:center;
+    }
+
+    #lang-btn,
+    #theme-btn{
+        width:100%;
+        margin-top:10px;
+    }
+
+}
 }
 .card-text{
     color: black;
 }
 /* Personnalisation du bouton Bootstrap */
 .btn-theme{
-    border: 2px solid var(--bs-teal);
-    color: var(--bs-teal);
-    background-color: transparent;
-    transition: all 0.4s ease;
+    border:2px solid white;
+    color:white;
+    background:transparent;
+    transition:.4s;
 }
 
 .btn-theme:hover{
-    background-color: var(--bs-teal);
-    color: white;
+    background:white;
+    color:black;
 }
-
 /* ========================= */
 /*         THÈME SOMBRE      */
 /* ========================= */
@@ -427,4 +439,33 @@ body.dark-mode .copyright{
 
 #carouselExampleIndicators .idr img{
     object-fit: cover;
+}
+#lang-btn,
+#theme-btn{
+    min-width: 60px;
+    height: 42px;
+}
+/* Style commun à tous les boutons */
+.btn,
+button{
+    border-radius: 50px !important;
+    padding: 10px 25px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+/* Boutons personnalisés */
+.btn-oder,
+.btn-theme{
+    border: 2px solid var(--bs-teal);
+    color: var(--bs-teal);
+    background: transparent;
+}
+
+/* Effet au survol */
+.btn-oder:hover,
+.btn-theme:hover,
+.explorer button:hover{
+    background-color: var(--bs-teal);
+    color: white;
 }
