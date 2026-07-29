@@ -89,7 +89,7 @@ langBtn.addEventListener("click", () => {
 
     if(currentLang === "fr"){
 
-        document.querySelector(".nav-link.active").textContent = "Home";
+        document.querySelector(".nav-link").textContent = "Home";
 
         document.querySelectorAll(".nav-link")[1].textContent = "Discover";
         document.querySelectorAll(".nav-link")[2].textContent = "Classics";
