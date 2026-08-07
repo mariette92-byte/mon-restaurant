@@ -30,13 +30,31 @@
 .nav-link{
     color: white;
 }
+/* Toutes les cartes ont la même hauteur */
+.card{
+    height: 100%;
+}
 
+/* Toutes les images ont exactement la même taille */
+.card img,
+.card-img,
+.card-img-top{
+    width: 100%;
+    height: 250px;      /* même hauteur pour toutes */
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Les cartes gardent la même hauteur */
+.card-body{
+    min-height: 110px;
+}
 .card-img-top{
     aspect-ratio: 4/3;
     height: auto;
 }
 .nav-link:hover{
-  border-bottom: 1px solid  var(--bs-teal) ;  
   width: 100%;
   color:var(--bs-teal)  ;
 }
@@ -146,7 +164,7 @@ h6{
 }
 
 .bammen{
-    min-height: 800px;
+    min-height: auto;
     background: black;
     position: relative;
     background-size: cover;
@@ -165,7 +183,18 @@ h6{
     margin: auto;
     object-fit: cover;
 }
-
+.cc-navbar .container{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.navbar-brand{
+    margin:0;
+    padding:0;
+}
+.navbar-nav{
+    align-items:center;
+}
 .oner-one{
     position: relative;
     margin-top: 100px;
@@ -401,9 +430,6 @@ p{
     background:white;
     color:black;
 }
-/* ========================= */
-/*         THÈME SOMBRE      */
-/* ========================= */
 
 body.dark-mode{
     background-color: #121212;
@@ -475,7 +501,9 @@ button{
     color: var(--bs-teal);
     background: transparent;
 }
-
+.section{
+    min-height: auto;
+}
 /* Effet au survol */
 .btn-oder:hover,
 .btn-theme:hover,
@@ -486,4 +514,28 @@ button{
 .div{
     max-width: 1200px;
     margin: 0 auto;
+}
+/* Tous les boutons des menus ont la même forme */
+.nav-tabs .nav-link :hover{
+    border-radius: 50px ;
+    border: white;
+    color: white;
+    background: transparent;
+    transition: all .4s ease;
+}
+
+/* Bouton actif */
+.nav-tabs .nav-link.active:hover{
+    background-color: var(--bs-teal) ;
+    color: white;
+    border-color: var(--bs-teal);
+    border-radius: 50px;
+}
+
+/* Au survol */
+.nav-tabs .nav-link:hover{
+    background-color:white;
+    color:white;
+    border-color: white;
+    border-radius: 50px;
 }
